@@ -262,8 +262,6 @@ body {
   width: 100%;
 }
 
-
-
 /* Features Section  */
 
 .features {
@@ -276,64 +274,62 @@ body {
   gap: 50px;
 }
 .features-header h2 {
-    font-size: 3.1rem;
-    color: #191A15;
-    font-weight: 600;
-    line-height: 1.2;
+  font-size: 3.1rem;
+  color: #191a15;
+  font-weight: 600;
+  line-height: 1.2;
 }
 .features-header p {
-    font-size: 1.25rem;
-    color: #A6A6A6;
-    max-width: 500px;
-    width: 100%;
-    align-self: center;
-    justify-self: flex-end;
-    font-weight: 500;
-    line-height: 30px;
+  font-size: 1.25rem;
+  color: #a6a6a6;
+  max-width: 500px;
+  width: 100%;
+  align-self: center;
+  justify-self: flex-end;
+  font-weight: 500;
+  line-height: 30px;
 }
 
 .features-header button {
-    width: 162px;
-    justify-self: flex-end;
-    height: 66px;
-    border: none;
-    background-color: #54bd95;
-    align-self: center;
-    font-size: 1.1rem;
-    font-weight: 500;
-    color: #ffffff;
-    border-radius: 70px;
+  width: 162px;
+  justify-self: flex-end;
+  height: 66px;
+  border: none;
+  background-color: #54bd95;
+  align-self: center;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #ffffff;
+  border-radius: 70px;
 }
 
 .card-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit , minmax(400px , 1fr));
-    gap: 40px;
-    margin-top: 60px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 400px), 1fr));
+  gap: 40px;
+  margin-top: 60px;
 }
 .card-container img {
-    width: 100%;
+  width: 100%;
 }
 
 .card-container .content {
-    margin: 15px 0px;
+  margin: 15px 0px;
 }
 
 .card-container .content h3 {
-    font-size: 1.9rem;
-    color: #191A15;
-    font-weight: 600;
-    margin-bottom: 10px;
+  font-size: 1.9rem;
+  color: #191a15;
+  font-weight: 600;
+  margin-bottom: 10px;
 }
 
 .card-container .content p {
-    font-size: 1.1rem;
-    color: #A6A6A6;
-    font-weight: 500;
-    line-height: 30px;
+  font-size: 1.1rem;
+  color: #a6a6a6;
+  font-weight: 500;
+  line-height: 30px;
 }
-
-
 
 @media (max-width: 992px) {
   html {
@@ -393,10 +389,21 @@ body {
   }
   .card-container {
     padding: 10px 60px;
-}
-.features-header {
-  grid-template-columns: 1fr;
-}
+  }
+  .features-header {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .features-header p {
+    justify-self: center;
+    text-align: center;
+  }
+
+  .features-header button {
+    justify-self: center;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -420,7 +427,7 @@ body {
   }
   .card-container {
     padding: 10px 60px;
-}
+  }
 }
 
 @media (max-width: 490px) {
@@ -462,7 +469,4 @@ body {
   .landing-page .login button {
     width: 50px;
   }
-
-
-
 }
