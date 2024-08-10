@@ -54,9 +54,9 @@ body {
   background: rgb(101, 196, 161);
   background: linear-gradient(
     141deg,
-    rgba(101, 196, 161, 0.34) 0%,
+    rgba(101, 196, 161,  0.228) 0%,
     rgba(255, 255, 255, 1) 50%,
-    rgba(101, 196, 161, 0.34) 100%
+    rgba(101, 196, 161,  0.228) 100%
   );
 }
 
@@ -264,6 +264,16 @@ body {
 
 /* Features Section  */
 
+.main-section {
+  background: rgb(101, 196, 161);
+  background: linear-gradient(
+    141deg,
+    rgba(101, 196, 161, 0.228) 0%,
+    rgba(255, 255, 255, 1) 50%,
+    rgba(101, 196, 161, 0.228) 100%
+  );
+}
+
 .features {
   padding: 80px 0px;
 }
@@ -330,6 +340,169 @@ body {
   font-weight: 500;
   line-height: 30px;
 }
+
+
+
+
+.benifits-section .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 90px;
+}
+
+
+.benfits-text-section {
+  flex: 1;
+}
+
+.benfits-text-section h2 {
+  font-size: 3.1rem;
+  color: #191A15;
+  font-weight: 700;
+  margin-bottom: 40px;
+  max-width: 390px;
+  width: 100%;
+}
+.benfits-text-section ul {
+  list-style-position: inside;
+  line-height: 3;
+}
+
+.benfits-text-section ul li {
+  list-style: none;
+  position: relative;
+  padding-left: 50px;
+  font-size: 1.1rem;
+  color: #191A15;
+  font-weight: 500;
+
+}
+
+.benfits-text-section ul li::before {
+  content: url(../images/true.svg);
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: 0;
+  top: 10px;
+}
+
+.benfits-image-section {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.benfits-image-section .image-section-container img {
+  width: 100%;
+  height: auto;
+}
+
+
+.benfits-image-section .image-section-container {
+  position: relative;
+}
+
+.benfits-image-section .image-section-container::before {
+  content: url(../images/binifits\ \(4\).svg);
+  position: absolute;
+  top: 30px;
+  left: -130px;
+}
+
+
+.benfits-image-section .image-section-container::after {
+  content: url(../images/binifits\ \(5\).svg);
+  position: absolute;
+  top: 110px;
+  right: -80px;
+}
+
+
+.benfits-image-section .image-section-container .span-one {
+  content: url(../images/binifits\ \(1\).svg);
+  position: absolute;
+  left: -70px;
+  top: 50%;
+}
+
+.benfits-image-section .image-section-container .span-two {
+  content: url(../images/binifits\ \(2\).svg);
+  position: absolute;
+  left: -120px;
+  top: 100%;
+  transform: translateY(-50%);
+}
+
+
+
+
+.plan-section .container header  {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.plan-section header h2 {
+  font-size: 3.1rem;
+  font-weight: 700;
+  color: #191A15;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.plan-section header p {
+  font-size: 1.1rem;
+  color: #a6a6a6;
+  font-weight: 500;
+  margin-bottom: 25px;
+}
+
+.plan-section .header-buttons-container {
+  padding: 5px;
+  background-color: white;
+  border-radius: 10px;
+  max-width: 300px;
+  width: 100%;
+  margin: 20px auto;
+}
+
+.header-buttons-container button {
+  padding: 15px 0px;
+  width: 142px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.header-buttons-container button:nth-child(1){
+  background-color: transparent;
+  color: #191A15;
+}
+
+.header-buttons-container button:nth-child(2) {
+  background-color: #54BD95;
+  color: #ffffff;
+}
+
+.plans-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill , minmax(min(60% , 374px) , 1fr));
+  gap: 20px;
+  padding-bottom: 60px;
+}
+
+.plans-cards img {
+  width: 100%;
+}
+
+
+
+
 
 @media (max-width: 992px) {
   html {
@@ -404,6 +577,14 @@ body {
   .features-header button {
     justify-self: center;
   }
+  .plans-cards {
+    padding: 40px;
+  }
+
+  .features-header {
+    padding: 0px 40px;
+  }
+
 }
 
 @media (max-width: 1200px) {
@@ -428,6 +609,20 @@ body {
   .card-container {
     padding: 10px 60px;
   }
+  .benfits-image-section {
+    display: none;
+  }
+  .benifits-section .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .benfits-text-section {
+    margin-bottom: 40px;
+  }
+  .benfits-text-section h2{
+    text-align: center;
+  }
+
 }
 
 @media (max-width: 490px) {
@@ -468,5 +663,157 @@ body {
   }
   .landing-page .login button {
     width: 50px;
+  }
+  .benfits-text-section h2 {
+    font-size: 2.5rem;
+  }
+  .benfits-text-section ul li {
+    padding-left: 40px;
+  }
+}
+/* Footer Section */
+.footer {
+  background-color: #1A202C; /* Footer background color */
+  padding: 60px 20px; /* Padding around the footer */
+}
+
+.footer-wrapper {
+  display: flex;
+  flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+  justify-content: space-between; /* Space between each footer column */
+  max-width: 1200px; /* Max width for the footer content */
+  margin: 0 auto; /* Center the footer content */
+  text-align: left; /* Align text to the left */
+}
+
+/* Newsletter Section */
+.newsletter {
+  flex: 1 1 300px; /* Flexbox properties for responsiveness */
+  margin-bottom: 40px; /* Space below the newsletter section */
+}
+
+.newsletter h1 {
+  color: #6EE7B7; /* Color for the "Biccas" heading */
+  font-size: 32px; /* Font size for the heading */
+  margin-bottom: 15px; /* Space below the heading */
+  font-weight: bold; /* Make the heading bold */
+}
+
+.newsletter p {
+  margin-bottom: 25px; /* Space below the newsletter paragraph */
+  font-size: 16px; /* Font size for the paragraph */
+  color: #A0AEC0; /* Slightly lighter color for the text */
+}
+
+.newsletter .w-form {
+  display: flex;
+  align-items: center; /* Center align the form input and button */
+  gap: 10px; /* Space between the input and the arrow icon */
+}
+
+.newsletter input[type="text"] {
+  padding: 12px 15px; /* Padding inside the input field */
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Rounded corners for the input */
+  width: 80%; /* Input width */
+  background-color: #2D3748; /* Background color for input */
+  color: #fff; /* Text color inside the input */
+  font-size: 16px; /* Font size for input text */
+}
+
+.newsletter input::placeholder {
+  color: #A0AEC0; /* Placeholder text color */
+}
+
+.newsletter img {
+  width: 24px; /* Width of the arrow icon */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* Footer Columns */
+.footer-row {
+  flex: 1 1 200px; /* Flexbox properties for responsiveness */
+  margin-bottom: 40px; /* Space below each footer column */
+}
+
+.footer-row p.footer-heading {
+  font-weight: bold; /* Bold text for section headings */
+  margin-bottom: 15px; /* Space below each heading */
+  color: #FFFFFF; /* White color for headings */
+  font-size: 18px; /* Font size for section headings */
+}
+
+.footer-row p.footer-paragraph {
+  margin: 8px 0; /* Margin around each paragraph */
+  font-size: 15px; /* Font size for paragraphs */
+  color: #A0AEC0; /* Lighter color for paragraph text */
+  cursor: pointer; /* Pointer cursor for links */
+}
+
+.footer-row a {
+  text-decoration: none; /* Remove underline from links */
+  color: inherit; /* Inherit text color */
+}
+
+.footer-row a:hover p.footer-paragraph {
+  color: #6EE7B7; /* Change text color on hover */
+}
+
+/* Last Row (Copyright and Terms) */
+.last-row {
+  display: flex;
+  justify-content: space-between; /* Space between copyright and terms */
+  align-items: center; /* Center align the items vertically */
+  border-top: 1px solid #2D3748; /* Top border for separation */
+  padding-top: 20px; /* Padding above the last row */
+  margin-top: 40px; /* Margin above the last row */
+}
+
+.last-row p.policy {
+  font-size: 14px; /* Font size for policy text */
+  color: #A0AEC0; /* Lighter color for policy text */
+}
+
+.terms {
+  display: flex;
+  gap: 30px; /* Space between each term */
+}
+
+.terms p {
+  cursor: pointer; /* Pointer cursor for terms */
+}
+
+.terms p:hover {
+  color: #6EE7B7; /* Change color on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-wrapper {
+      flex-direction: column; /* Stack footer columns vertically */
+      text-align: center; /* Center text on smaller screens */
+  }
+  
+  .newsletter {
+      text-align: center; /* Center the newsletter section */
+  }
+
+  .newsletter .w-form {
+      justify-content: center; /* Center align the form */
+  }
+
+  .footer-row {
+      text-align: center; /* Center the footer columns */
+  }
+
+  .last-row {
+      flex-direction: column; /* Stack items vertically */
+      gap: 20px; /* Space between the items */
+      text-align: center; /* Center text */
+  }
+
+  .terms {
+      justify-content: center; /* Center the terms section */
+      flex-direction: column; /* Stack terms vertically */
   }
 }
